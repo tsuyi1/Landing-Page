@@ -35,8 +35,14 @@ header {
     color: #e5e7eb;
 }
 
-.menu {
-    list-style-type: none;
+a, a:visited, a:hover, a:active {
+    list-style: none; 
+    text-decoration: none;
+}
+
+.menu, a:visited, a:hover, a:active {
+    color: #e5e7eb;
+    list-style: none;
     display: flex;
     gap: 1.5em;
 }
@@ -68,7 +74,10 @@ button {
     width: 120px;
     border-radius: 8px;
     color: #e5e7eb;
+    border-style: solid;
+    border-color: #E5E7EB;
 }
+
 
 /* Random Information Section */
 
@@ -89,26 +98,74 @@ main {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     padding: 15em 10em;
 }
 
 .square {
-    
-    height: 200px;
-    width: 200px;
-    background-color: aquamarine;
+    display: flex;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #3882F6;
+    height: 210px;
+    width: 210px;
 }
 
 /* Testimonial */
-blockquote {
-background-color: #e5e7eb;
-font-size: 36px;
-font: light italic;
-color: #1f2937;
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 7em 13em;
 }
 
-.testimonial-container {
+em {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.quote p    {
     display: flex;
-    align-items: center;
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+/* Call To Action */
+.action-container {
+    display: flex;
     justify-content: center;
-  }
+    align-items: center;
+    padding: 5em 13em;
+}
+
+.action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    padding: 3em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btnstyle {
+    border-style: solid;
+    border-color: #E5E7EB;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    padding: 3em;
+    font-size: 20px;
+ }
