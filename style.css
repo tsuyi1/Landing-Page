@@ -78,7 +78,37 @@ main {
     justify-content: center;
     margin-top: 2em;
     padding: 0 10em;
+    flex-direction: column;
+    text-align: justify;
 }
 
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5em;
+}
 
+.card {
+    padding: 15em 10em;
+}
 
+.square {
+    
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+
+/* Testimonial */
+blockquote {
+background-color: #e5e7eb;
+font-size: 36px;
+font: light italic;
+color: #1f2937;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
